@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; padding: 0; background-color: transparent; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+    * { box-sizing: border-box; }
+  </style>
+</head>
+<body>
+<div className={className || "content-stretch flex flex-col items-start relative"} id={isIconstart ? "node-172_7904" : "node-172_7902"}>
+      <div className={`backdrop-blur-[20px] bg-white border border-solid content-stretch flex gap-[10px] h-[56px] items-center px-[20px] py-[17px] relative rounded-[24px] shrink-0 w-[343px] ${isIconstart ? "border-[#e0e0e0]" : "border-[#ededed]"}`} id={isIconstart ? "node-172_7697" : "node-172_7657"} data-name="Input Form">
+        {isPassword && (
+          <>
+            <div class="relative shrink-0 size-[24px]" data-node-id="172:7658" data-name="lock">
+              <div class="absolute contents inset-0" data-node-id="I172:7658;12:37316" data-name="vuesax linear lock">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/22841f4e-3a34-4ee4-abbb-50b8c5b98e58.svg" />
+              </div>
+            </div>
+            <p class="[word-break:break-word] flex-[1_0_0] font-['SF_Pro:Regular'] font-normal leading-[1.7] min-w-px relative text-[#9e9e9e] text-[12px]" data-node-id="172:7659" style="font-variation-settings: \'wdth\' 100">
+              Enter your password
+            </p>
+            <div class="content-stretch flex items-center relative shrink-0" data-node-id="172:7660" data-name="Frame">
+              <div class="relative shrink-0 size-[16px]" data-node-id="172:7661" data-name="eye slash">
+                <div class="absolute contents inset-0" data-node-id="I172:7661;30:37268" data-name="vuesax outline eye slash">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/6e437ff8-9134-410a-b739-8d8bc2528945.svg" />
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+        {isIconstart && (
+          <>
+            <div class="relative shrink-0 size-[24px]" data-node-id="172:7698" data-name="user">
+              <div class="absolute contents inset-0" data-node-id="I172:7698;12:11189" data-name="vuesax linear user">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/059bde63-3aa8-4861-9ff7-652fb2ff8f0b.svg" />
+              </div>
+            </div>
+            <p class="[word-break:break-word] flex-[1_0_0] font-['SF_Pro:Regular'] font-normal leading-[1.7] min-w-px relative text-[#9e9e9e] text-[12px]" data-node-id="172:7699" style="font-variation-settings: \'wdth\' 100">
+              Placeholder
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+</body>
+</html>

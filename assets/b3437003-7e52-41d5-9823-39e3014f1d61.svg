@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="truck-tick">
+<path id="Vector" d="M15 2V12C15 13.1 14.1 14 13 14H2V7.62C2.73 8.49 3.85003 9.03 5.09003 9C6.10003 8.98 7.01 8.59 7.69 7.94C8 7.68 8.26002 7.34999 8.46002 6.98999C8.82002 6.37999 9.02 5.65997 9 4.90997C8.97 3.73997 8.45001 2.71 7.64001 2H15Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<path id="Vector_2" d="M22 14V17C22 18.66 20.66 20 19 20H18C18 18.9 17.1 18 16 18C14.9 18 14 18.9 14 20H10C10 18.9 9.1 18 8 18C6.9 18 6 18.9 6 20H5C3.34 20 2 18.66 2 17V14H13C14.1 14 15 13.1 15 12V5H16.84C17.56 5 18.22 5.39001 18.58 6.01001L20.29 9H19C18.45 9 18 9.45 18 10V13C18 13.55 18.45 14 19 14H22Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<path id="Vector_3" d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<path id="Vector_4" d="M18 20C18 21.1046 17.1046 22 16 22C14.8954 22 14 21.1046 14 20C14 18.8954 14.8954 18 16 18C17.1046 18 18 18.8954 18 20Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<path id="Vector_5" d="M22 12V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L22 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<g id="Group">
+<path id="Vector_6" d="M8.99999 4.90999C9.01999 5.65999 8.82001 6.38001 8.46001 6.99001C8.26001 7.35001 7.99999 7.68002 7.68999 7.94002C7.00999 8.59002 6.10002 8.98002 5.09002 9.00002C3.85002 9.03002 2.72999 8.49001 1.99999 7.62001C1.85999 7.47001 1.73999 7.30002 1.62999 7.13002C1.23999 6.54002 1.01999 5.84005 0.999989 5.09005C0.969989 3.83005 1.52998 2.68001 2.42998 1.93001C3.10998 1.37001 3.96996 1.02002 4.90996 1.00002C5.95996 0.98002 6.92 1.36002 7.64 2.00002C8.45 2.71002 8.96999 3.73999 8.99999 4.90999Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+<path id="Vector_7" d="M3.44 5.03003L4.45001 5.98999L6.53998 3.96997" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#1D6759"/>
+</g>
+<g id="Vector_8" opacity="0">
+</g>
+</g>
+</svg>
