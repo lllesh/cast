@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="331" height="331" viewBox="0 0 331 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="QR lines">
+<path id="Rectangle 995" d="M2 82L2 62C2 28.8629 28.8629 2 62 2L82 2" stroke-width="4" stroke-linecap="round" stroke="white"/>
+<path id="Rectangle 994" d="M249 2.00001H269C302.137 2.00001 329 28.8629 329 62V82" stroke-width="4" stroke-linecap="round" stroke="white"/>
+<path id="Rectangle 997" d="M2 249L2 269C2 302.137 28.8629 329 62 329L82 329" stroke-width="4" stroke-linecap="round" stroke="white"/>
+<path id="Rectangle 996" d="M249 329H269C302.137 329 329 302.137 329 269V249" stroke-width="4" stroke-linecap="round" stroke="white"/>
+</g>
+</svg>

@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Video recording">
+<circle id="Full" cx="36" cy="36" r="34" stroke-width="4" stroke="#2E3A59"/>
+<path id="Progress" d="M36 70C55.8823 70 70 53.5 70 36C70 18.5 55.8823 2 36 2" stroke-width="4" stroke="#8EF351"/>
+<rect id="Red" x="16" y="16" width="40" height="40" rx="16" fill="#F5222D"/>
+</g>
+</svg>
