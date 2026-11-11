@@ -132,6 +132,13 @@
         </div>
       </div>
 
+      
+      <!-- Sound Mute/Unmute Toggle Pill -->
+      <button id="sound-toggle-btn" onclick="toggleAppSound()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl glass-btn text-xs font-bold text-slate-300 hover:text-white transition active:scale-95">
+        <span id="sound-icon">🔊</span>
+        <span id="sound-label" class="hidden sm:inline">Som Ativo</span>
+      </button>
+
       <!-- Quick Action Profile Pill -->
       <div class="flex items-center gap-2">
         <button onclick="showModal('notif')" class="w-10 h-10 rounded-2xl glass-btn flex items-center justify-center text-slate-300 relative">
@@ -278,7 +285,32 @@
   <!-- SCRIPT ENGINE V2: INTERATIVIDADE REAL & ÁUDIO SINTETIZADO -->
   <script>
     
-    // Premium Haptic Audio Engine (Natural iOS / Taptic Engine Feel)
+    
+    // Sound State & Toggle
+    let soundEnabled = true;
+
+    function toggleAppSound() {
+      soundEnabled = !soundEnabled;
+      const icon = document.getElementById('sound-icon');
+      const label = document.getElementById('sound-label');
+      const btn = document.getElementById('sound-toggle-btn');
+      if (soundEnabled) {
+        icon.innerText = '🔊';
+        if (label) label.innerText = 'Som Ativo';
+        btn.classList.remove('opacity-50', 'text-slate-500');
+        btn.classList.add('text-slate-300');
+        playSoftChime();
+        showToast('Efeitos sonoros ativados');
+      } else {
+        icon.innerText = '🔇';
+        if (label) label.innerText = 'Mudo';
+        btn.classList.add('opacity-50', 'text-slate-500');
+        btn.classList.remove('text-slate-300');
+        showToast('Efeitos sonoros desativados');
+      }
+    }
+
+    // Premium Organic iOS Haptic Audio Engine
     let audioCtx = null;
     function getAudioContext() {
       if (!audioCtx) {
@@ -287,27 +319,29 @@
       return audioCtx;
     }
 
-    // 1. Soft Taptic Click (Som de clique macio físico, sem tiro ou videogame)
+    // 1. Soft Physical Taptic Click (Som orgânico aveludado de toque tátil)
     function playTapticClick() {
+      if (!soundEnabled) return;
       try {
         const ctx = getAudioContext();
         if (ctx.state === 'suspended') ctx.resume();
         const osc = ctx.createOscillator();
         const gain = ctx.createGain();
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(140, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(40, ctx.currentTime + 0.04);
-        gain.gain.setValueAtTime(0.2, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+        osc.frequency.setValueAtTime(120, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(35, ctx.currentTime + 0.035);
+        gain.gain.setValueAtTime(0.18, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.035);
         osc.connect(gain);
         gain.connect(ctx.destination);
         osc.start();
-        osc.stop(ctx.currentTime + 0.04);
+        osc.stop(ctx.currentTime + 0.035);
       } catch(e) {}
     }
 
-    // 2. Soft Bubble / Water Drop (Reação elegante de coração/fogo)
+    // 2. Soft Bubble Pop (Gota / Bolha sutil orgânica para corações e reações)
     function playBubblePop() {
+      if (!soundEnabled) return;
       try {
         const ctx = getAudioContext();
         if (ctx.state === 'suspended') ctx.resume();
@@ -315,18 +349,19 @@
         const gain = ctx.createGain();
         osc.type = 'sine';
         osc.frequency.setValueAtTime(320, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(580, ctx.currentTime + 0.06);
+        osc.frequency.exponentialRampToValueAtTime(560, ctx.currentTime + 0.05);
         gain.gain.setValueAtTime(0.12, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.06);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
         osc.connect(gain);
         gain.connect(ctx.destination);
         osc.start();
-        osc.stop(ctx.currentTime + 0.06);
+        osc.stop(ctx.currentTime + 0.05);
       } catch(e) {}
     }
 
-    // 3. Elegant Micro Chime (Confirmação sutil)
+    // 3. Elegant Micro Chime (Campainha harmônica aveludada para confirmação)
     function playSoftChime() {
+      if (!soundEnabled) return;
       try {
         const ctx = getAudioContext();
         if (ctx.state === 'suspended') ctx.resume();
@@ -335,19 +370,16 @@
           const gain = ctx.createGain();
           osc.type = 'sine';
           osc.frequency.setValueAtTime(freq, ctx.currentTime + (i * 0.05));
-          gain.gain.setValueAtTime(0.08, ctx.currentTime + (i * 0.05));
-          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + (i * 0.05) + 0.15);
+          gain.gain.setValueAtTime(0.06, ctx.currentTime + (i * 0.05));
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + (i * 0.05) + 0.12);
           osc.connect(gain);
           gain.connect(ctx.destination);
           osc.start(ctx.currentTime + (i * 0.05));
-          osc.stop(ctx.currentTime + (i * 0.05) + 0.15);
+          osc.stop(ctx.currentTime + (i * 0.05) + 0.12);
         });
       } catch(e) {}
     }
 
-    function triggerHapticSound() {
-      playTapticClick();
-    }
  catch (e) {}
     }
 
@@ -669,6 +701,7 @@
 
     // ACTIONS
     function switchView(viewKey) {
+      playTapticClick();
       triggerHapticSound(520, 0.05);
       state.currentView = viewKey;
 
