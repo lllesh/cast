@@ -194,7 +194,7 @@
     </aside>
 
     <!-- ÁREA CENTRAL INTERATIVA: O CORAÇÃO DO APLICATIVO -->
-    <div class="col-span-1 lg:col-span-6 w-full max-w-xl mx-auto flex flex-col gap-5">
+    <div class="col-span-1 lg:col-span-6 w-full max-w-xl mx-auto flex flex-col gap-5 pb-32">
       
       <!-- STORIES / REALS INTERATIVOS COM ANIMAÇÃO 3D -->
       <div class="w-full glass-panel rounded-3xl p-4 flex items-center gap-4 overflow-x-auto no-scroll">
@@ -246,7 +246,7 @@
   </main>
 
   <!-- MOBILE BOTTOM BAR COM TRANSIÇÕES TÁTEIS -->
-  <nav class="lg:hidden fixed bottom-0 left-0 right-0 h-20 bg-[#060710]/95 backdrop-blur-2xl border-t border-white/10 px-6 flex items-center justify-around z-50 select-none">
+  <nav class="lg:hidden fixed bottom-0 left-0 right-0 h-20 bg-[#060710]/95 backdrop-blur-2xl border-t border-white/10 px-6 flex items-center justify-around z-40 select-none pointer-events-auto">
     <button onclick="switchView('feed')" id="mob-feed" class="flex flex-col items-center gap-1 text-pink-500 transition active:scale-90">
       <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       <span class="text-[10px] font-bold">Feed</span>
@@ -255,7 +255,7 @@
       <svg class="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
       <span class="text-[10px] font-bold">Canais</span>
     </button>
-    <button onclick="switchView('create')" id="mob-create" class="flex flex-col items-center justify-center -mt-6 transition active:scale-90">
+    <button onclick="switchView('create')" id="mob-create" class="flex flex-col items-center justify-center -mt-5 transition active:scale-90 z-50">
       <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-pink-600 via-rose-500 to-amber-400 p-0.5 shadow-xl shadow-pink-500/40">
         <div class="w-full h-full rounded-full bg-gradient-to-tr from-pink-500 to-rose-600 flex items-center justify-center text-white">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
